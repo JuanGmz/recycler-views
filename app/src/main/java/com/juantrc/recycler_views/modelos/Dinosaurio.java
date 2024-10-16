@@ -1,8 +1,9 @@
 package com.juantrc.recycler_views.modelos;
 
-import android.graphics.Color;
+import java.io.Serializable;
 
-public class Dinosaurio {
+// Clase Dinosaurio que implementa Serializable para poder pasar objetos entre actividades
+public class Dinosaurio implements Serializable {
     public String nombre;
     public String tipo;
     public String descripcion;

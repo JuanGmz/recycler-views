@@ -12,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.juantrc.recycler_views.R;
+import com.juantrc.recycler_views.modelos.DetalleDino;
 import com.juantrc.recycler_views.modelos.Dinosaurio;
 
 import java.util.List;
@@ -75,10 +76,13 @@ public class AdaptadorDinosaurio extends RecyclerView.Adapter<AdaptadorDinosauri
         @Override
         public void onClick(View v) {
             // como pasar valores de una actividad a otra
-            Intent intent = new Intent(v.getContext(), Dinosaurio.class);
-            intent.putExtra("dino", dino);
-            v.getContext().startActivity(intent);
 
+            // Crear el intent con la clase de destino
+            Intent intent = new Intent(v.getContext(), DetalleDino.class);
+            // Agregar el objeto Dinosaurio al intent, para poder recuperarlo en la otra actividad, se usa putExtra y el nombre del objeto y el objeto
+            intent.putExtra("dino", dino);
+            // Iniciar la actividad
+            v.getContext().startActivity(intent);
         }
     }
 }
