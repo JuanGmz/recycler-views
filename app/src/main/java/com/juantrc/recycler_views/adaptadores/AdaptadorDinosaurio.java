@@ -1,5 +1,6 @@
 package com.juantrc.recycler_views.adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.View;
@@ -68,12 +69,16 @@ public class AdaptadorDinosaurio extends RecyclerView.Adapter<AdaptadorDinosauri
             tvTipo.setText(dino.getTipo());
             tvDescripcion.setText(dino.getDescripcion());
             imgDino.setImageResource(dino.getImagen());
-
+            cl.setBackgroundColor(dino.getColor());
         }
 
         @Override
         public void onClick(View v) {
             // como pasar valores de una actividad a otra
+            Intent intent = new Intent(v.getContext(), Dinosaurio.class);
+            intent.putExtra("dino", dino);
+            v.getContext().startActivity(intent);
+
         }
     }
 }

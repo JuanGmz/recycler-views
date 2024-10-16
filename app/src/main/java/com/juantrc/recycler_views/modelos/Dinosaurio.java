@@ -6,10 +6,10 @@ public class Dinosaurio {
     public String nombre;
     public String tipo;
     public String descripcion;
-    public Color color;
+    public int color;
     public int imagen;
 
-    public Dinosaurio(String nombre, String tipo, String descripcion, Color color, int imagen) {
+    public Dinosaurio(String nombre, String tipo, String descripcion, int color, int imagen) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.descripcion = descripcion;
@@ -41,11 +41,11 @@ public class Dinosaurio {
         this.descripcion = descripcion;
     }
 
-    public Color getColor() {
+    public int getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(int color) {
         this.color = color;
     }
 

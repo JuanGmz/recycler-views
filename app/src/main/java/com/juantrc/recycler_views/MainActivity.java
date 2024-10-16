@@ -22,15 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         List<Dinosaurio> listaDinosaurios = new ArrayList<>();
 
-        new Color
-
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", "Verde", R.drawable.triceratops));
+        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", Color.parseColor("#ba63df"), R.drawable.triceratops));
+        listaDinosaurios.add(new Dinosaurio("T-Rex", "Carnívoro", "Dinosaurio muy grande", Color.parseColor("#FF5733"), R.drawable.trex));
+        listaDinosaurios.add(new Dinosaurio("Velociraptor", "Carnívoro", "Es muy veloz", Color.parseColor("#9eeff4"), R.drawable.velociraptor));
+        listaDinosaurios.add(new Dinosaurio("Stegosaurus", "Herbívoro", "Tiene picos en el cuerpo", Color.parseColor("#f49ecd"), R.drawable.stegosaurus));
+        listaDinosaurios.add(new Dinosaurio("Diplodocus", "Herbívoro", "Es extremadamente grande", Color.parseColor("#c4f49e"), R.drawable.diplodocus));
+        listaDinosaurios.add(new Dinosaurio("Mosasaurus", "Herbívoro", "Dinosaurio acuático", Color.parseColor("#9ec1f4"), R.drawable.mosasaurus));
+        listaDinosaurios.add(new Dinosaurio("Ankylosaurus", "Herbívoro", "Tiene muchos picos", Color.parseColor("#f49ee7"), R.drawable.ankylosaurus));
 
         AdaptadorDinosaurio adaptador = new AdaptadorDinosaurio(listaDinosaurios);
 
