@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Dinosaurio> listaDinosaurios = new ArrayList<>();
 
-        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", Color.parseColor("#ba63df"), R.drawable.triceratops));
+        listaDinosaurios.add(new Dinosaurio("Triceratops", "Herbívoro", "Dinosaurio muy grande", Color.parseColor("#9eeff4"), R.drawable.triceratops));
         listaDinosaurios.add(new Dinosaurio("T-Rex", "Carnívoro", "Dinosaurio muy grande", Color.parseColor("#FF5733"), R.drawable.trex));
         listaDinosaurios.add(new Dinosaurio("Velociraptor", "Carnívoro", "Es muy veloz", Color.parseColor("#9eeff4"), R.drawable.velociraptor));
         listaDinosaurios.add(new Dinosaurio("Stegosaurus", "Herbívoro", "Tiene picos en el cuerpo", Color.parseColor("#f49ecd"), R.drawable.stegosaurus));
